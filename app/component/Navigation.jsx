@@ -68,7 +68,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/about">
+                  <Link href="/">
                     <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                       About
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -76,7 +76,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/services">
+                  <Link href="/">
                     <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                       Services
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -84,7 +84,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/skills">
+                  <Link href="/">
                     <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                       Skills
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -92,7 +92,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/contact">
+                  <Link href="/">
                     <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                       Contact
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
