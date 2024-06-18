@@ -72,6 +72,7 @@ const Banner = () => {
               layout="responsive"
               className="border-[1px] mt-10 xl:mt-0"
               src={BannerImage}
+              alt="bannerImage"
             />
           </div>
         </Flex>

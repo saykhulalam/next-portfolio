@@ -14,6 +14,7 @@ const ProjectsItemLeft = ({ ImageUrl, Name, Peragraph, LinkUrl }) => {
             placeholder="blur"
             layout="responsive"
             src={ImageUrl}
+            alt="demoImage"
           />
         </div>
         <div className="xl:w-[50%] lg:w-[50%] md:w-[50%]">

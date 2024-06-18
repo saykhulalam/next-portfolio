@@ -35,6 +35,7 @@ const ProjectsItemRight = ({ ImageUrl, Name, Peragraph, LinkUrl }) => {
             placeholder="blur"
             layout="responsive"
             src={ImageUrl}
+            alt='demoImage'
           />
         </div>
       </Flex>

@@ -18,6 +18,7 @@ const About = () => {
               className="border-[1px]"
               src={aboutImage}
               layout="responsive"
+              alt="aboutImage"
             />
           </div>
           <div className="xl:w-[60%]">
