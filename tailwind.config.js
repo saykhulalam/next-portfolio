@@ -23,6 +23,16 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      
+      keyframes: {
+        loadingBar: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+      },
+      animation: {
+        loadingBar: 'loadingBar 2s infinite',
+      },
     },
   },
   plugins: [],

@@ -9,19 +9,26 @@ import ListItem from "./ListItem";
 const Navigation = () => {
   const [open, setOpen] = React.useState(false);
 
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
   return (
     <nav className="bg-dark-bg">
       <Container>
         <div className="border-gray-200 py-5">
           <div className="flex flex-wrap items-center justify-between">
             <Link href="/">
-              <span className="self-center text-[25px] font-semibold whitespace-nowrap text-white font-inter">
+              <span className="self-center text-[20px] font-semibold whitespace-nowrap text-white font-inter">
                 Saykhul-Alam
               </span>
             </Link>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
               <Link href="/resume">
-                <button className="hover:bg-blue-700 duration-200 flex items-center gap-2 font-inter text-white text-[15px] border-white border-[1px] px-2 py-2 rounded-lg">
+                <button
+                  className="hover:bg-blue-700 duration-200 flex items-center gap-2 font-inter text-white text-[15px] border-white border-[1px] px-2 py-2 rounded-lg"
+                  onClick={handleLinkClick}
+                >
                   Resume <IoDocumentText />
                 </button>
               </Link>
@@ -59,7 +66,7 @@ const Navigation = () => {
             >
               <List className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/">
+                  <Link href="/" onClick={handleLinkClick}>
                     <span className="block py-2 px-3 md:p-0 text-white">
                       Home
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -67,7 +74,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="#About">
+                  <Link href="/about" onClick={handleLinkClick}>
                     <span className="block py-2 px-3 md:p-0 text-white">
                       About
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -75,7 +82,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="#Services">
+                  <Link href="/servic" onClick={handleLinkClick}>
                     <span className="block py-2 px-3 md:p-0 text-white">
                       Services
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -83,7 +90,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="#Projects">
+                  <Link href="/projects" onClick={handleLinkClick}>
                     <span className="block py-2 px-3 md:p-0 text-white">
                       Projects
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -91,7 +98,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="#Skills">
+                  <Link href="/skills" onClick={handleLinkClick}>
                     <span className="block py-2 px-3 md:p-0 text-white">
                       Skills
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -99,7 +106,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="#Contact">
+                  <Link href="/contact" onClick={handleLinkClick}>
                     <span className="block py-2 px-3 md:p-0 text-white">
                       Contact
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>

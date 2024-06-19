@@ -12,54 +12,54 @@ const Footer = () => {
       <Container>
         <Flex className=" justify-between items-center py-10 lg:flex-row flex-col gap-4 sm:flex-row">
           <Link href="/">
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-inter">
+            <span className="self-center text-[20px] font-semibold text-white font-inter">
               Saykhul-Alam
             </span>
           </Link>
           <List className="flex lg:gap-5 lg:flex-row flex-col sm:flex-row ">
             <ListItem className="ml-3">
               <Link href="/">
-                <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
+                <span className="block py-2 px-3 md:p-0 text-white">
                   Home
                   <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
                 </span>
               </Link>
             </ListItem>
             <ListItem className="ml-3">
-              <Link href="#About">
-                <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
+              <Link href="/about">
+                <span className="block py-2 px-3 md:p-0 text-white">
                   About
                   <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
                 </span>
               </Link>
             </ListItem>
             <ListItem className="ml-3">
-              <Link href="#Services">
-                <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
+              <Link href="/servic">
+                <span className="block py-2 px-3 md:p-0 text-white">
                   Services
                   <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
                 </span>
               </Link>
             </ListItem>
             <ListItem className="ml-3">
-              <Link href="#Projects">
-                <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
+              <Link href="/projects">
+                <span className="block py-2 px-3 md:p-0 text-white">
                   Projects
                   <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
                 </span>
               </Link>
             </ListItem>
             <ListItem className="ml-3">
-              <Link href="#Skills">
-                <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
+              <Link href="/skills">
+                <span className="block py-2 px-3 md:p-0 text-white">
                   Skills
                   <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
                 </span>
               </Link>
             </ListItem>
             <ListItem className="ml-3">
-              <Link href="#Contact">
-                <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
+              <Link href="/contact">
+                <span className="block py-2 px-3 md:p-0 text-white">
                   Contact
                   <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
                 </span>

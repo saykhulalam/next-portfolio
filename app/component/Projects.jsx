@@ -10,7 +10,7 @@ import excluImage from "../assats/exclu.png";
 
 const Projects = () => {
   return (
-    <section id="Projects" className=" bg-dark-bg xl:pt-10 pb-10">
+    <section id="Projects" className=" bg-dark-bg xl:pt-10 pb-10 py-10">
       <Container>
         <Title Name="PROJECTS" className="mb-10" />
         <div className="xl:mt-20">
