@@ -39,7 +39,7 @@ const ProjectsItemRight = ({ ImageUrl, Name, Peragraph, LinkUrl }) => {
           />
         </div>
       </Flex>
-      <hr className="mt-10" />
+      <hr className="mt-10 mb-10" />
     </div>
   )
 }

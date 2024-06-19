@@ -1,9 +1,11 @@
 import About from "./component/About";
 import Banner from "./component/Banner";
-import CustomerFeedback from "./component/CustomerFeedback";
 import Projects from "./component/Projects";
 import Services from "./component/Services";
 import Skills from "./component/Skills";
+import Contact from "./component/Contact";
+import Scroll from "./component/Scroll";
+import Resume from "./component/Resume";
 
 export default function Home() {
   return (
@@ -13,7 +15,8 @@ export default function Home() {
       <About/>
       <Services/>
       <Projects/>
-      <CustomerFeedback/>
+     <Contact/>
+     <Scroll/>
     </main>
   );
 }

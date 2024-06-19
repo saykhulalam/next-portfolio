@@ -1,11 +1,10 @@
-// components/Navigation.js
 "use client";
 import React from "react";
-import Container from "./Container"; // Ensure these imports are correct
+import Container from "./Container"; 
 import Link from "next/link";
 import { IoDocumentText } from "react-icons/io5";
-import List from "./List"; // Ensure these imports are correct
-import ListItem from "./ListItem"; // Ensure these imports are correct
+import List from "./List"; 
+import ListItem from "./ListItem"; 
 
 const Navigation = () => {
   const [open, setOpen] = React.useState(false);
@@ -17,7 +16,7 @@ const Navigation = () => {
           <div className="flex flex-wrap items-center justify-between">
             <Link href="/">
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-inter">
-                Saykhul-alam
+                Saykhul-Alam
               </span>
             </Link>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -68,7 +67,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/">
+                  <Link href="#About">
                     <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                       About
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -76,7 +75,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/">
+                  <Link href="#Services">
                     <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                       Services
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -84,7 +83,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/">
+                  <Link href="#Skills">
                     <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                       Skills
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -92,7 +91,7 @@ const Navigation = () => {
                   </Link>
                 </ListItem>
                 <ListItem className="font-inter text-[15px] select-none group">
-                  <Link href="/">
+                  <Link href="#Contact">
                     <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                       Contact
                       <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>

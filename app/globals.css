@@ -47,5 +47,5 @@ body {
   overflow: hidden;
   border-right: 3px solid;
   animation: typing 2s steps(15) 1s 1 normal both,
-    blink 500ms steps(20) infinite;
+    blink 400ms steps(20) infinite;
 }

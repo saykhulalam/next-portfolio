@@ -6,7 +6,7 @@ import ListItem from "./ListItem";
 import { FaCheck } from "react-icons/fa";
 const Services = () => {
   return (
-    <section className=" bg-dark-bg xl:py-20 py-16">
+    <section id="Services" className=" bg-dark-bg xl:py-20 py-16">
       <Container>
         <Title Name="SERVICES" />
         <div className="one">

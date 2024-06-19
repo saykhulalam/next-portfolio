@@ -7,7 +7,7 @@ import aboutImage from "../assats/aboutImage.png";
 
 const About = () => {
   return (
-    <section className=" bg-dark-bg py-10">
+    <section id="About" className=" bg-dark-bg py-10">
       <Container>
         <Title Name="ABOUT" />
         <Flex className="mt-14 xl:mt-20 gap-5 items-center xl:flex-row flex-col">

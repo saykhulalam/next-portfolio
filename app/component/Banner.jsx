@@ -21,7 +21,7 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSkill((prevSkill) => (prevSkill + 1) % skills.length);
-    }, 6000); // Change skill every 4 seconds
+    }, 5000); // Change skill seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -54,13 +54,25 @@ const Banner = () => {
               Bringing visions to life with clean, modern code.
             </p>
             <Flex className=" gap-4 mt-4">
-              <Link href="#">
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/towsif.hridoy.12?mibextid=ZbWKwL"
+              >
                 <FaFacebookSquare className="text-[50px] text-white" />
               </Link>
-              <Link href="#">
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://wa.me/8801966266966"
+              >
                 <FaWhatsappSquare className="text-[50px] text-white" />
               </Link>
-              <Link href="#">
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/saykhulalam"
+              >
                 <FaSquareGithub className="text-[50px] text-white" />
               </Link>
             </Flex>
