@@ -5,7 +5,6 @@ import Services from "./component/Services";
 import Skills from "./component/Skills";
 import Contact from "./component/Contact";
 import Scroll from "./component/Scroll";
-import Resume from "./component/Resume";
 
 export default function Home() {
   return (

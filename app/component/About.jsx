@@ -31,7 +31,7 @@ const About = () => {
               development, continuously enhancing my skills. I am proficient in
               React.js, JavaScript, Next.js, Tailwind CSS, and Bootstrap. Using
               these technologies, I have developed several e-commerce websites.
-              My education and wor experience drive my eagerness to learn new
+              My education and work experience drive my eagerness to learn new
               things. My goal is to create creative and interactive web
               experiences for users. I constantly learn about new technologies
               and tools and apply them to real-world projects. I have worked on
@@ -45,7 +45,7 @@ const About = () => {
               ways for progress, not just through the use of technology. I am
               dedicated to my work and always keen to take on new challenges. My
               dream is to create something that will impact people and bring
-              lasting change to society. Feel free to contact me. Let's create
+              lasting change to society. Feel free to contact me. Let&apos;s create
               something amazing together!
             </p>
           </div>
