@@ -9,7 +9,6 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import Link from "next/link";
-import Loading from "./Loading";
 
 const skills = [
   "front end web developer.....",
@@ -30,7 +29,6 @@ const Banner = () => {
   return (
     <section className=" bg-dark-bg py-8 ">
       <Container>
-        <Loading/>
         <Flex className="justify-between xl:items-center xl:flex-row flex-col sm:flex-row sm:items-center">
           <div className="xl:w-[50%]">
             <h1 className="text-[30px] font-bold text-white flex tracking-[3px] font-inter gap-1 mb-5">
