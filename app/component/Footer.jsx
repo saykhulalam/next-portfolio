@@ -42,6 +42,14 @@ const Footer = () => {
               </Link>
             </ListItem>
             <ListItem className="ml-3">
+              <Link href="#Projects">
+                <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
+                  Projects
+                  <span className="block mx-auto mt-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
+                </span>
+              </Link>
+            </ListItem>
+            <ListItem className="ml-3">
               <Link href="#Skills">
                 <span className="block py-2 px-3 md:p-0 text-gray-900 dark:text-white">
                   Skills
@@ -64,7 +72,10 @@ const Footer = () => {
             </button>
           </Link>
         </Flex>
-        <p className="text-[15px] text-white font-poppins text-center pb-4"> &#169; copyright-2024</p>
+        <p className="text-[15px] text-white font-poppins text-center pb-4">
+          {" "}
+          &#169; copyright-2024
+        </p>
       </Container>
     </section>
   );
