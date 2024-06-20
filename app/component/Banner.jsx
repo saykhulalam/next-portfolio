@@ -30,7 +30,7 @@ const Banner = () => {
     <section className=" bg-dark-bg py-8 ">
       <Container>
         <Flex className="justify-between xl:items-center xl:flex-row flex-col sm:flex-row sm:items-center">
-          <div className="xl:w-[50%]">
+          <div className="xl:w-[65%]">
             <h1 className="text-[30px] font-bold text-white flex tracking-[3px] font-inter gap-1 mb-5">
               Hi...
               <CgHello />
@@ -77,7 +77,7 @@ const Banner = () => {
               </Link>
             </Flex>
           </div>
-          <div className="XL:w-[50%] flex justify-end">
+          <div className="XL:w-[35%] flex justify-end">
             <Image
               quality={75}
               placeholder="blur"
