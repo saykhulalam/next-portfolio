@@ -39,11 +39,11 @@ const Contact = () => {
     const contactRef = ref(database, "contacts");
     push(contactRef, values)
       .then(() => {
-        console.log("Data saved successfully.");
+        alert("Your form has been submitted successfully! Thank you.");
         resetForm();
       })
       .catch((error) => {
-        console.error("Error saving data: ", error);
+        alert("Failed to submit your form. Please try again. ", error);
       });
   };
 
