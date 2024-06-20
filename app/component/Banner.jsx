@@ -11,9 +11,9 @@ import { FaSquareGithub } from "react-icons/fa6";
 import Link from "next/link";
 
 const skills = [
-  "front end web developer.....",
-  "next JS developer.....",
-  "react JS developer.....",
+  "front end web developer",
+  "next JS developer",
+  "react JS developer",
 ];
 
 const Banner = () => {
@@ -77,7 +77,7 @@ const Banner = () => {
               </Link>
             </Flex>
           </div>
-          <div className="XL:w-[35%] flex justify-end">
+          <div className="xl:w-[35%] flex justify-end">
             <Image
               quality={75}
               placeholder="blur"
