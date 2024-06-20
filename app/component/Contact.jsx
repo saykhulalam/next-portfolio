@@ -28,41 +28,41 @@ const Contact = () => {
         <Title Name="CONTACT" className="mb-10" />
         <Flex className="xl:items-center xl:gap-48 xl:flex-row flex-col lg:flex-row lg:gap-10 gap-10">
           <div className="xl:w-[50%]">
-            <h2 className="text-[40px] text-white font-inter font-bold mb-[20px]">
+            <h2 className="text-[30px] text-white font-inter font-bold mb-[20px]">
               Let&apos;s Talk
             </h2>
-            <p className="text-white text-[20px] font-poppins">
+            <p className="text-white text-[15px] font-poppins">
               Have some big idea or brand to develop and need help? Then reach
               out we&apos;d love to hear about your project and provide help
             </p>
             <div className="mt-[54px] mb-[54px]">
-              <h2 className="text-[40px] text-white font-inter font-bold mb-[20px]">
+              <h2 className="text-[30px] text-white font-inter font-bold mb-[20px]">
                 Email
               </h2>
-              <p className="text-white text-[20px] font-poppins">
+              <p className="text-white text-[15px] font-poppins">
                 saykhulalam@gmail.com
               </p>
-              <h2 className="text-white text-[20px] font-inter tracking-[1px] flex items-center gap-4 mt-[20px] ">
+              <h2 className="text-white text-[15px] font-inter tracking-[1px] flex items-center gap-4 mt-[20px] ">
                 <FaPhoneVolume />
                 01966266966
               </h2>
             </div>
             <div className="mt-[54px]">
-              <h2 className="text-[40px] text-white font-inter font-bold mb-[20px]">
+              <h2 className="text-[30px] text-white font-inter font-bold mb-[20px]">
                 Socials
               </h2>
               <Link target="_blank" rel="noopener noreferrer" href="#">
-                <p className=" mb-[20px] text-white text-[20px] font-poppins underline">
+                <p className=" mb-[20px] text-white text-[15px] font-poppins underline">
                   Instagram
                 </p>
               </Link>
               <Link target="_blank" rel="noopener noreferrer" href="#">
-                <p className=" mb-[20px] text-white text-[20px] font-poppins underline">
+                <p className=" mb-[20px] text-white text-[15px] font-poppins underline">
                   Twitter
                 </p>
               </Link>
               <Link target="_blank" rel="noopener noreferrer" href="#">
-                <p className=" mb-[20px] text-white text-[20px] font-poppins underline">
+                <p className=" mb-[20px] text-white text-[15px] font-poppins underline">
                   Facebook
                 </p>
               </Link>
