@@ -1,4 +1,7 @@
 "use client";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, push } from "firebase/database";
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
@@ -7,6 +10,21 @@ import Flex from "./Flex";
 import Link from "next/link";
 import Title from "./Title";
 import { FaPhoneVolume } from "react-icons/fa6";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCLij-BbxFaCk6qVRl3sC7900wTSrG-Jh8",
+  authDomain: "next-portfolio-feca1.firebaseapp.com",
+  databaseURL: "https://next-portfolio-feca1-default-rtdb.firebaseio.com",
+  projectId: "next-portfolio-feca1",
+  storageBucket: "next-portfolio-feca1.appspot.com",
+  messagingSenderId: "78442928554",
+  appId: "1:78442928554:web:d40a7d2f5521869e2bf3d3",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
 
 const Contact = () => {
   const validationSchema = Yup.object().shape({
@@ -18,8 +36,15 @@ const Contact = () => {
   });
 
   const handleSubmit = (values, { resetForm }) => {
-    console.log(values);
-    resetForm();
+    const contactRef = ref(database, "contacts");
+    push(contactRef, values)
+      .then(() => {
+        console.log("Data saved successfully.");
+        resetForm();
+      })
+      .catch((error) => {
+        console.error("Error saving data: ", error);
+      });
   };
 
   return (
@@ -89,7 +114,7 @@ const Contact = () => {
                     <Field
                       name="name"
                       type="text"
-                      className="bg-gray-400 xl:w-[500px] w-[320px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[46px]"
+                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[46px]"
                     />
                     <ErrorMessage
                       name="name"
@@ -104,7 +129,7 @@ const Contact = () => {
                     <Field
                       name="email"
                       type="email"
-                      className="bg-gray-400 xl:w-[500px] w-[320px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[46px]"
+                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[46px]"
                     />
                     <ErrorMessage
                       name="email"
@@ -119,7 +144,7 @@ const Contact = () => {
                     <Field
                       name="service"
                       as="select"
-                      className="bg-gray-400 xl:w-[500px] w-[320px] sm:w-[500px] text-[20px] font-poppins pl-5 pr-10 h-[46px] text-white"
+                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 pr-10 h-[46px] text-white"
                     >
                       <option value="">Select project type</option>
                       <option value="Single Page Application">
@@ -145,7 +170,7 @@ const Contact = () => {
                     <Field
                       name="budget"
                       as="select"
-                      className="bg-gray-400 xl:w-[500px] w-[320px] sm:w-[500px] text-[20px] font-poppins pl-5 pr-10 h-[46px] text-white"
+                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 pr-10 h-[46px] text-white"
                     >
                       <option value="">Select budget range</option>
                       <option value="$150">Less than $150</option>
@@ -165,7 +190,7 @@ const Contact = () => {
                     <Field
                       name="message"
                       as="textarea"
-                      className="bg-gray-400 xl:w-[500px] w-[320px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[165px] text-black pt-2"
+                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[165px] text-black pt-2"
                     />
                     <ErrorMessage
                       name="message"
