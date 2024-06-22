@@ -18,7 +18,7 @@ const ProjectsItemLeft = ({ ImageUrl, Name, Peragraph, LinkUrl }) => {
           />
         </div>
         <div className="xl:w-[50%] lg:w-[50%] md:w-[50%]">
-          <h2 className="text-[30px] text-blue-600 font-inter font-semibold">
+          <h2 className="text-[30px] text-blue-600 font-inter font-bold">
             {Name}
           </h2>
           <p className="text-white font-normal font-poppins text-[20px] mt-5">

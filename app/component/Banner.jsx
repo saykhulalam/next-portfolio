@@ -39,7 +39,7 @@ const Banner = () => {
               I AM SAYKHUL-ALAM
             </h3>
             <h2
-              className="typing-text duration-200 bg-blue-600 text-white py-1 tracking-[5px] mt-4 font-poppins xl:text-[30px] font-bold "
+              className="typing-text duration-200 bg-blue-600 text-white py-1 tracking-[5px] mt-4 font-poppins xl:text-[30px] font-bold"
               key={currentSkill}
             >
               {skills[currentSkill]}
@@ -53,27 +53,35 @@ const Banner = () => {
               Dedicated to turning complex problems into elegant solutions.
               Bringing visions to life with clean, modern code.
             </p>
-            <Flex className=" gap-4 mt-4">
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/towsif.hridoy.12?mibextid=ZbWKwL"
-              >
-                <FaFacebookSquare className="text-[50px] text-white" />
-              </Link>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://wa.me/8801966266966"
-              >
-                <FaWhatsappSquare className="text-[50px] text-white" />
-              </Link>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/saykhulalam"
-              >
-                <FaSquareGithub className="text-[50px] text-white" />
+            <Flex className=" gap-4 mt-4 xl:items-center xl:flex-row flex-col">
+              <div className="flex gap-4">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/towsif.hridoy.12?mibextid=ZbWKwL"
+                >
+                  <FaFacebookSquare className="text-[50px] text-white" />
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://wa.me/8801966266966"
+                >
+                  <FaWhatsappSquare className="text-[50px] text-white" />
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/saykhulalam"
+                >
+                  <FaSquareGithub className="text-[50px] text-white" />
+                </Link>
+              </div>
+              <Link href="/projects">
+                <button className="text-white font-poppins font-bold rounded-br-[20px] rounded-tl-[20px] border py-4 px-4 hover:bg-blue-600 duration-100">
+                  {" "}
+                  VIEW MY PRJECTS
+                </button>
               </Link>
             </Flex>
           </div>

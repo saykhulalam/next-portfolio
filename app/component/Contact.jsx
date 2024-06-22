@@ -10,6 +10,8 @@ import Flex from "./Flex";
 import Link from "next/link";
 import Title from "./Title";
 import { FaPhoneVolume } from "react-icons/fa6";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -39,11 +41,11 @@ const Contact = () => {
     const contactRef = ref(database, "contacts");
     push(contactRef, values)
       .then(() => {
-        alert("Your form has been submitted successfully! Thank you.");
+        toast.success("Your form has been submitted successfully! Thank you.");
         resetForm();
       })
       .catch((error) => {
-        alert("Failed to submit your form. Please try again. ", error);
+        toast.error("Failed to submit your form. Please try again.");
       });
   };
 
@@ -210,6 +212,7 @@ const Contact = () => {
           </div>
         </Flex>
       </Container>
+      <ToastContainer />
     </section>
   );
 };

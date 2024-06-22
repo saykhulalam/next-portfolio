@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Flex from "./Flex";
 import Image from "next/image";
 import { SiNetlify } from "react-icons/si";
@@ -9,23 +9,19 @@ const ProjectsItemRight = ({ ImageUrl, Name, Peragraph, LinkUrl }) => {
     <div>
       <Flex className="gap-5 items-center xl:flex-row flex-col lg:flex-row md:flex-row">
         <div className=" xl:text-right lg:w-[50%] xl:w-[50%] md:w-[50%]">
-          <h2 className="text-[30px] text-blue-600 font-inter font-semibold">
+          <h2 className="text-[30px] text-blue-600 font-inter font-bold">
             {Name}
           </h2>
           <p className="text-white font-normal font-poppins text-[20px] mt-5">
             {Peragraph}
           </p>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href={`${LinkUrl}`}
-          >
+          <Link target="_blank" rel="noopener noreferrer" href={`${LinkUrl}`}>
             <div className=" xl:ml-[65%]">
-            <button className="text-[20px] text-white font-inter font-semibold border-[1px] py-3 px-6 rounded-br-[20px] rounded-tl-[20px] flex items-center gap-3 mt-5 hover:bg-blue-600 duration-200">
-              {" "}
-              <SiNetlify className="text-[30px]" />
-              LIVE DEMO
-            </button>
+              <button className="text-[20px] text-white font-inter font-semibold border-[1px] py-3 px-6 rounded-br-[20px] rounded-tl-[20px] flex items-center gap-3 mt-5 hover:bg-blue-600 duration-200">
+                {" "}
+                <SiNetlify className="text-[30px]" />
+                LIVE DEMO
+              </button>
             </div>
           </Link>
         </div>
@@ -35,13 +31,13 @@ const ProjectsItemRight = ({ ImageUrl, Name, Peragraph, LinkUrl }) => {
             placeholder="blur"
             layout="responsive"
             src={ImageUrl}
-            alt='demoImage'
+            alt="demoImage"
           />
         </div>
       </Flex>
       <hr className="mt-10 mb-10" />
     </div>
-  )
-}
+  );
+};
 
-export default ProjectsItemRight
+export default ProjectsItemRight;
