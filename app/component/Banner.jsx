@@ -9,6 +9,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
 
 const skills = [
   "front end web developer",
@@ -75,6 +76,13 @@ const Banner = () => {
                   href="https://github.com/saykhulalam"
                 >
                   <FaSquareGithub className="text-[50px] text-white" />
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/saykhul-alam-25a1312a8/"
+                >
+                  <FaLinkedin className="text-[50px] text-white" />
                 </Link>
               </div>
               <Link href="/projects">

@@ -12,6 +12,10 @@ import Title from "./Title";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaWhatsappSquare } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -74,26 +78,36 @@ const Contact = () => {
                 01966266966
               </h2>
             </div>
-            <div className="mt-[54px]">
-              <h2 className="text-[30px] text-white font-inter font-bold mb-[20px]">
-                Socials
-              </h2>
-              <Link target="_blank" rel="noopener noreferrer" href="#">
-                <p className=" mb-[20px] text-white text-[15px] font-poppins underline">
-                  Instagram
-                </p>
+            <Flex className=" gap-4 mt-4 xl:items-center xl:flex-row flex-col">
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/towsif.hridoy.12?mibextid=ZbWKwL"
+              >
+                <FaFacebookSquare className="text-[50px] text-white" />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="#">
-                <p className=" mb-[20px] text-white text-[15px] font-poppins underline">
-                  Twitter
-                </p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://wa.me/8801966266966"
+              >
+                <FaWhatsappSquare className="text-[50px] text-white" />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="#">
-                <p className=" mb-[20px] text-white text-[15px] font-poppins underline">
-                  Facebook
-                </p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/saykhulalam"
+              >
+                <FaSquareGithub className="text-[50px] text-white" />
               </Link>
-            </div>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/saykhul-alam-25a1312a8/"
+              >
+                <FaLinkedin className="text-[50px] text-white" />
+              </Link>
+            </Flex>
           </div>
           <div className="xl:w-[50%]">
             <Formik
@@ -202,7 +216,7 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
-                    className="xl:w-[500px] w-[320px] sm:w-[500px] text-[20px] h-[56px] text-white bg-blue-600"
+                    className="xl:w-[500px] w-[320px] sm:w-[500px] text-[20px] h-[56px] text-white bg-blue-600 hover:bg-green-500"
                   >
                     Submit
                   </button>
