@@ -25,31 +25,6 @@ body {
     text-wrap: balance;
   }
 }
-/* Custom CSS for typing animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.typing-text {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  animation: typing 2s steps(15) 1s 1 normal both,
-    blink 400ms steps(20) infinite;
-}
-/* ........ */
 
 /* dokar somoi er lodder */
 @keyframes bounce {

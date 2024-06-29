@@ -10,42 +10,45 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
-
-const skills = [
-  "front end web developer",
-  "next JS developer",
-  "react JS developer",
-];
+import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
-  const [currentSkill, setCurrentSkill] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSkill((prevSkill) => (prevSkill + 1) % skills.length);
-    }, 5000); // Change skill seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className=" bg-dark-bg py-8 ">
       <Container>
         <Flex className="justify-between xl:items-center xl:flex-row flex-col sm:flex-row sm:items-center">
-          <div className="xl:w-[65%]">
+          <div className="xl:w-[50%]">
             <h1 className="text-[30px] font-bold text-white flex tracking-[3px] font-inter gap-1 mb-5">
               Hi...
               <CgHello />
             </h1>
-            <h3 className="text-white text-[25px] font-inter font-bold tracking-[1px]">
+            <h3 className="text-white text-[25px] font-inter font-bold tracking-[1px] mb-4">
               I AM SAYKHUL-ALAM
             </h3>
-            <h2
-              className="typing-text duration-200 bg-blue-600 text-white py-1 tracking-[5px] mt-4 font-poppins xl:text-[30px] font-bold"
-              key={currentSkill}
-            >
-              {skills[currentSkill]}
-            </h2>
-            <h3 className="text-white xl:text-[25px] text-[20px] font-poppins font-bold tracking-[1px] mt-4">
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "front end web developer",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "front end web developer",
+                1000,
+                "react js developer",
+                1000,
+                "next js developer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={30}
+              style={{
+                fontSize: "25px",
+                display: "inline-block",
+                fontFamily: " poppins",
+                color: " white",
+                fontWeight: "600",
+              }}
+              repeat={Infinity}
+            />
+            <h3 className="text-white xl:text-[25px] text-[20px] font-poppins font-semibold tracking-[1px] mt-4">
               {" "}
               beside in Bangladesh
             </h3>
@@ -93,7 +96,7 @@ const Banner = () => {
               </Link>
             </Flex>
           </div>
-          <div className="xl:w-[35%] flex justify-end">
+          <div className="xl:w-[50%] flex justify-end">
             <Image
               quality={75}
               placeholder="blur"
