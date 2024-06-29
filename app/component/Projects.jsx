@@ -16,8 +16,16 @@ const Projects = () => {
     <section id="Projects" className=" bg-dark-bg xl:pt-10 pb-10 py-10">
       <Container>
         <Title Name="PROJECTS" className="mb-10" />
-        <div className="xl:mt-20">
+        <div className="mt-14">
           <ProjectsItemLeft
+            LinkUrl="https://exclusive-wab.netlify.app/"
+            ImageUrl={excluImage}
+            Name=" E_COMMERCE REACT JS PROJACT"
+            Peragraph="This project is built using React.js for the frontend, ensuring a dynamic and interactive user experience. To style the application, I have used Tailwind CSS, which provides utility-first CSS classes to design responsive layouts efficiently. The website includes key features such as product listings, a shopping cart, and a checkout process to simulate a real e-commerce platform.The demo website is hosted for free on Netlify."
+          />
+        </div>
+        <div className="xl:mt-20">
+          <ProjectsItemRight
             LinkUrl="https://hancok-game.netlify.app/"
             ImageUrl={hankockDextop}
             Name="RAW HTML CSS PROJACT"
@@ -25,7 +33,7 @@ const Projects = () => {
           />
         </div>
         <div className="mt-14">
-          <ProjectsItemRight
+          <ProjectsItemLeft
             LinkUrl="https://coffe-shope.netlify.app"
             ImageUrl={coffeImage}
             Name="HTML TAILWIND PROJACT"
@@ -33,7 +41,7 @@ const Projects = () => {
           />
         </div>
         <div className="xl:mt-20">
-          <ProjectsItemLeft
+          <ProjectsItemRight
             LinkUrl="https://innovate-wabe.netlify.app/#"
             ImageUrl={innoviteImage}
             Name="HTML-BOOTSTARP PROJACT"
@@ -41,14 +49,6 @@ const Projects = () => {
           />
         </div>
         <div className="mt-14"></div>
-        <div className="mt-14">
-          <ProjectsItemRight
-            LinkUrl="https://exclusive-wab.netlify.app/"
-            ImageUrl={excluImage}
-            Name=" E_COMMERCE REACT JS PROJACT"
-            Peragraph="This project is built using React.js for the frontend, ensuring a dynamic and interactive user experience. To style the application, I have used Tailwind CSS, which provides utility-first CSS classes to design responsive layouts efficiently. The website includes key features such as product listings, a shopping cart, and a checkout process to simulate a real e-commerce platform.The demo website is hosted for free on Netlify."
-          />
-        </div>
         <div className="xl:mt-20">
           <ProjectsItemLeft
             LinkUrl="https://logoipsome.netlify.app/"

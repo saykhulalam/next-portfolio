@@ -12,6 +12,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
+import { SiNetlify } from "react-icons/si";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -80,6 +81,7 @@ const Skills = () => {
           <SkillItem key="github" Icon={<FaGithub />} Name="Github" />
           <SkillItem key="firebase" Icon={<IoLogoFirebase />} Name="Firebase" />
           <SkillItem key="tailwind2" Icon={<SiTailwindcss />} Name="Tailwind" />
+          <SkillItem key="Netlify" Icon={<SiNetlify />} Name="Netlify" />
         </Slider>
       </Container>
     </section>
