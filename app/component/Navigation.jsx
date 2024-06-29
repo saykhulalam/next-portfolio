@@ -19,7 +19,7 @@ const Navigation = () => {
         <div className="border-gray-200 py-5">
           <div className="flex flex-wrap items-center justify-between">
             <Link href="/">
-              <span className="self-center text-[20px] font-semibold whitespace-nowrap text-white font-inter">
+              <span className="self-center text-[20px] font-bold whitespace-nowrap text-white font-inter">
                 Saykhul-Alam
               </span>
             </Link>

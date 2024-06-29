@@ -136,7 +136,7 @@ const Contact = () => {
                     <Field
                       name="name"
                       type="text"
-                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[46px]"
+                      className="bg-transparent text-white border xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[46px]"
                     />
                     <ErrorMessage
                       name="name"
@@ -151,7 +151,7 @@ const Contact = () => {
                     <Field
                       name="email"
                       type="email"
-                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[46px]"
+                      className="bg-transparent text-white border xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[46px]"
                     />
                     <ErrorMessage
                       name="email"
@@ -166,7 +166,7 @@ const Contact = () => {
                     <Field
                       name="service"
                       as="select"
-                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 pr-10 h-[46px] text-white"
+                      className="bg-dark-bg text-white border xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 pr-10 h-[46px]"
                     >
                       <option value="">Select project type</option>
                       <option value="Single Page Application">
@@ -192,7 +192,7 @@ const Contact = () => {
                     <Field
                       name="budget"
                       as="select"
-                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 pr-10 h-[46px] text-white"
+                      className="border bg-dark-bg xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 pr-10 h-[46px] text-white"
                     >
                       <option value="">Select budget range</option>
                       <option value="$150">Less than $150</option>
@@ -212,7 +212,7 @@ const Contact = () => {
                     <Field
                       name="message"
                       as="textarea"
-                      className="bg-gray-400 xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[165px] text-black pt-2"
+                      className=" bg-dark-bg border text-white xl:w-[500px] w-[330px] sm:w-[500px] text-[20px] font-poppins pl-5 h-[165px] pt-2"
                     />
                     <ErrorMessage
                       name="message"
