@@ -16,7 +16,7 @@ const Banner = () => {
   return (
     <section className=" bg-dark-bg py-8 ">
       <Container>
-        <Flex className="justify-between xl:items-center xl:flex-row flex-col sm:flex-row sm:items-center">
+        <Flex className="justify-between xl:items-center lg:items-center lg:flex-row xl:flex-row flex-col sm:flex-row sm:items-center">
           <div className="xl:w-[50%]">
             <h1 className="text-[30px] font-bold text-white flex tracking-[3px] font-inter gap-1 mb-5">
               Hi...

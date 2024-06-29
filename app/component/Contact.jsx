@@ -78,7 +78,7 @@ const Contact = () => {
                 01966266966
               </h2>
             </div>
-            <Flex className=" gap-4 mt-4 xl:items-center xl:flex-row flex-col">
+            <Flex className="gap-4 mt-4 xl:items-center xl:flex-row flex-row">
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
