@@ -16,6 +16,8 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import contactImg from "../assats/contact.svg";
+import Image from "next/image";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -59,12 +61,16 @@ const Contact = () => {
         <Title Name="CONTACT" className="mb-10" />
         <Flex className="xl:items-center xl:gap-48 xl:flex-row flex-col lg:flex-row lg:gap-10 gap-10">
           <div className="xl:w-[50%]">
+            <div className="mb-5">
+              <Image width={400} src={contactImg} />
+            </div>
             <h2 className="text-[30px] text-white font-inter font-bold mb-[20px]">
               Let&apos;s Talk
             </h2>
             <p className="text-white text-[15px] font-poppins">
-              Have some big idea or brand to develop and need help? Then reach
-              out we&apos;d love to hear about your project and provide help
+              Have some big idea or brand to develop and need help? <br /> Then
+              reach out we&apos;d love to hear about your project and provide
+              help
             </p>
             <div className="mt-[54px] mb-[54px]">
               <h2 className="text-[30px] text-white font-inter font-bold mb-[20px]">
