@@ -8,7 +8,6 @@ import Contact from "./component/Contact";
 import Scroll from "./component/Scroll";
 import { useState, useEffect } from "react";
 import FristLoading from "./component/FristLoading";
-import MessengerCustomerChat from "react-messenger-customer-chat";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -34,10 +33,6 @@ export default function Home() {
       <Projects />
       <Contact />
       <Scroll />
-      <MessengerCustomerChat
-        pageId="393543903831027"
-        appId="1244142530298418"
-      />
     </main>
   );
 }
