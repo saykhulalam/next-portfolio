@@ -34,7 +34,10 @@ export default function Home() {
       <Projects />
       <Contact />
       <Scroll />
-      <MessengerCustomerChat appId="<1244142530298418>" />
+      <MessengerCustomerChat
+        pageId="393543903831027"
+        appId="1244142530298418"
+      />
     </main>
   );
 }
