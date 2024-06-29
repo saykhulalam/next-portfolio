@@ -57,7 +57,7 @@ const Banner = () => {
               Dedicated to turning complex problems into elegant solutions.
               Bringing visions to life with clean, modern code.
             </p>
-            <Flex className=" gap-4 mt-4 xl:items-center xl:flex-row flex-col">
+            <Flex className=" gap-8 mt-4 xl:flex-col flex-col">
               <div className="flex gap-4">
                 <Link
                   target="_blank"
