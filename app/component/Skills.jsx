@@ -63,7 +63,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="Skills" className="bg-dark-bg py-20">
+    <section id="Skills" className="bg-white dark:bg-dark-bg py-20 duration-200">
       <Container>
         <Title Name="My SKILLS" className="xl:mb-20 mb-14" />
         <Slider {...settings}>

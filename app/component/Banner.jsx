@@ -14,15 +14,15 @@ import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
-    <section className=" bg-dark-bg py-8 ">
+    <section className=" bg-white dark:bg-dark-bg py-8 duration-200">
       <Container>
-        <Flex className="justify-between xl:items-center lg:items-center lg:flex-row xl:flex-row flex-col sm:flex-row sm:items-center">
+        <Flex className="justify-between xl:items-center lg:items-center lg:flex-row xl:flex-row flex-col sm:flex-row sm:items-center gap-5">
           <div className="xl:w-[50%]">
-            <h1 className="text-[30px] font-bold text-white flex tracking-[3px] font-inter gap-1 mb-5">
+            <h1 className="text-[30px] font-bold text-black dark:text-white flex tracking-[3px] font-inter gap-1 mb-5">
               Hi...
               <CgHello />
             </h1>
-            <h3 className="text-white text-[25px] font-inter font-bold tracking-[1px] mb-4">
+            <h3 className="text-black dark:text-white text-[25px] font-inter font-bold tracking-[1px] mb-4">
               I AM SAYKHUL-ALAM
             </h3>
             <TypeAnimation
@@ -43,16 +43,16 @@ const Banner = () => {
                 fontSize: "25px",
                 display: "inline-block",
                 fontFamily: " poppins",
-                color: " white",
+                color: "red",
                 fontWeight: "600",
               }}
               repeat={Infinity}
             />
-            <h3 className="text-white xl:text-[25px] text-[20px] font-poppins font-semibold tracking-[1px] mt-4">
+            <h3 className="text-black dark:text-white xl:text-[25px] text-[20px] font-poppins font-semibold tracking-[1px] mt-4">
               {" "}
               beside in Bangladesh
             </h3>
-            <p className="xl:text-[20px] sm:w-[350px] text-white mt-4 font-poppins xl:text-left">
+            <p className="xl:text-[20px] sm:w-[350px] dark:text-white text-black font-semibold mt-4 font-poppins xl:text-left">
               Passionate about crafting sleek, responsive web interfaces.
               Dedicated to turning complex problems into elegant solutions.
               Bringing visions to life with clean, modern code.
@@ -64,44 +64,44 @@ const Banner = () => {
                   rel="noopener noreferrer"
                   href="https://www.facebook.com/towsif.hridoy.12?mibextid=ZbWKwL"
                 >
-                  <FaFacebookSquare className="text-[50px] text-white" />
+                  <FaFacebookSquare className="text-[50px] dark:text-white text-black" />
                 </Link>
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://wa.me/8801966266966"
                 >
-                  <FaWhatsappSquare className="text-[50px] text-white" />
+                  <FaWhatsappSquare className="text-[50px] dark:text-white text-black" />
                 </Link>
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/saykhulalam"
                 >
-                  <FaSquareGithub className="text-[50px] text-white" />
+                  <FaSquareGithub className="text-[50px] dark:text-white text-black" />
                 </Link>
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/saykhul-alam-25a1312a8/"
                 >
-                  <FaLinkedin className="text-[50px] text-white" />
+                  <FaLinkedin className="text-[50px] dark:text-white text-black" />
                 </Link>
               </div>
               <Link href="/projects">
-                <button className="text-white font-poppins font-bold rounded-br-[20px] rounded-tl-[20px] border py-4 px-4 hover:bg-blue-600 duration-100">
+                <button className="dark:text-white text-black font-poppins font-bold rounded-br-[20px] rounded-tl-[20px] border-black border-[1px] dark:border-white py-4 px-4 hover:bg-blue-600 hover:text-white duration-100">
                   {" "}
                   VIEW MY PRJECTS
                 </button>
               </Link>
             </Flex>
           </div>
-          <div className="xl:w-[50%] flex justify-end">
+          <div className=" border-[1px] border-black dark:border-white xl:w-[50%] flex justify-end bg-zinc-400 dark:bg-dark-bg">
             <Image
               quality={75}
               placeholder="blur"
               layout="responsive"
-              className="border-[1px] mt-10 xl:mt-0"
+              className=" mt-10 xl:mt-0"
               src={BannerImage}
               alt="bannerImage"
             />

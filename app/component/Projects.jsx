@@ -13,7 +13,10 @@ import gymland from "../assats/gym-land.png";
 
 const Projects = () => {
   return (
-    <section id="Projects" className=" bg-dark-bg xl:pt-10 pb-10 py-10">
+    <section
+      id="Projects"
+      className=" bg-white dark:bg-dark-bg xl:pt-10 pb-10 py-10 duration-200"
+    >
       <Container>
         <Title Name="PROJECTS" className="mb-10" />
         <div className="mt-14">

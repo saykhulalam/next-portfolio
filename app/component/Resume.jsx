@@ -6,10 +6,10 @@ import cbTow from "../assats/2.png";
 
 const Resume = () => {
   return (
-    <section className="bg-dark-bg py-10">
+    <section className="bg-white dark:bg-dark-bg py-10 duration-200">
       <Container>
         <a href="/saykhul-alam-resume.pdf" download>
-          <button className="w-[150px] h-10 bg-blue-600 text-white hover:bg-transparent hover:border hover:border-blue-600 hover:text-blue-600 font-poppins font-bold mb-7">
+          <button className="w-[150px] h-10 bg-blue-600 text-white hover:bg-transparent hover:border-black  dark:hover:border-white hover:text-black border-[1px] dark:hover:text-white font-poppins font-bold mb-7">
             DOWNLOAD
           </button>
         </a>
