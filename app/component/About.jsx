@@ -16,7 +16,6 @@ const About = () => {
         <Flex className="mt-14 xl:mt-20 gap-5 items-center xl:flex-row flex-col">
           <div className="xl:w-[40%] flex items-center dark:bg-dark-bg">
             <Image
-              quality={100}
               className="border-[1px] border-black dark:border-white"
               src={aboutImage}
               layout="responsive"
