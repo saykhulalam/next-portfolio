@@ -3,18 +3,20 @@ import Container from "./Container";
 import Title from "./Title";
 import Flex from "./Flex";
 import Image from "next/image";
-import aboutImage from "../assats/aboutImage.png";
+import aboutImage from "../assats/aboutImage.webp";
 
 const About = () => {
   return (
-    <section id="About" className=" bg-white dark:bg-dark-bg py-10 duration-200">
+    <section
+      id="About"
+      className=" bg-white dark:bg-dark-bg py-10 duration-200"
+    >
       <Container>
         <Title Name="ABOUT" />
         <Flex className="mt-14 xl:mt-20 gap-5 items-center xl:flex-row flex-col">
-          <div className="xl:w-[40%] bg-zinc-400 dark:bg-dark-bg">
+          <div className="xl:w-[40%] flex items-center dark:bg-dark-bg">
             <Image
-              quality={75}
-              placeholder="blur"
+              quality={100}
               className="border-[1px] border-black dark:border-white"
               src={aboutImage}
               layout="responsive"
@@ -45,8 +47,8 @@ const About = () => {
               ways for progress, not just through the use of technology. I am
               dedicated to my work and always keen to take on new challenges. My
               dream is to create something that will impact people and bring
-              lasting change to society. Feel free to contact me. Let&apos;s create
-              something amazing together!
+              lasting change to society. Feel free to contact me. Let&apos;s
+              create something amazing together!
             </p>
           </div>
         </Flex>

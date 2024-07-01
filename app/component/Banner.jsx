@@ -18,11 +18,11 @@ const Banner = () => {
       <Container>
         <Flex className="justify-between xl:items-center lg:items-center lg:flex-row xl:flex-row flex-col sm:flex-row sm:items-center gap-5">
           <div className="xl:w-[50%]">
-            <h1 className="text-[30px] font-bold text-black dark:text-white flex tracking-[3px] font-inter gap-1 mb-5">
+            <h1 className="text-[30px] font-bold text-black dark:text-white flex tracking-[3px] font-inter gap-1 mb-3">
               Hi...
               <CgHello />
             </h1>
-            <h3 className="text-black dark:text-white text-[25px] font-inter font-bold tracking-[1px] mb-4">
+            <h3 className="text-black dark:text-white text-[25px] font-inter font-bold tracking-[1px] mb-3">
               I AM SAYKHUL-ALAM
             </h3>
             <TypeAnimation
@@ -96,7 +96,7 @@ const Banner = () => {
               </Link>
             </Flex>
           </div>
-          <div className=" border-[1px] border-black dark:border-white xl:w-[50%] flex justify-end bg-zinc-400 dark:bg-dark-bg">
+          <div className=" border-[1px] border-black dark:border-white xl:w-[50%] flex justify-end bg-black dark:bg-dark-bg">
             <Image
               quality={75}
               placeholder="blur"
